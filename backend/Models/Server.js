@@ -1,7 +1,8 @@
 const express = require("express");
 const bodyParser = require('body-parser');
 const cors = require("cors");
-
+const swaggerUI =  require ('swagger-ui-express');
+const swaggerSpec = require ('../swaggerConfig.js');
 const routeUsuarios = require("../routes/usuarios.routes.js");
 const routeIndicadores = require("../routes/indicadores.routes.js");
 const routeReportes = require("../routes/reportes.routes.js");
@@ -44,6 +45,8 @@ class Server {
     this.app.use(this.ReportesPath, routeReportes);
     this.app.use(this.RolesPath, routeRoles);
     this.app.use(this.AyudaPath, routeAyuda); 
+    this.app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerSpec));
+
   }
 
   listen() {

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button, Form } from 'semantic-ui-react';
 import axios from "axios";
+import './create.css'
 import { useNavigate } from "react-router-dom";
 
 export default function Create() {
@@ -38,47 +39,47 @@ export default function Create() {
   };
 
   return (
-    <div>
+    <div className="form-container">
       <Form className="create-form">
-        <Form.Field>
-          <label>Indicador</label>
-          <input name="indicador" placeholder="Nombre" value={formData.indicador} onChange={handleInputChange} />
+        <Form.Field className="form-field">
+          <label className="form-label">Indicador</label>
+          <input className="form-input" name="indicador" placeholder="Nombre" value={formData.indicador} onChange={handleInputChange} />
         </Form.Field>
-        <Form.Field>
-          <label>Descripción</label>
-          <input name="descripcion" placeholder="Descripción" value={formData.descripcion} onChange={handleInputChange} />
+        <Form.Field className="form-field">
+          <label className="form-label">Descripción</label>
+          <input className="form-input" name="descripcion" placeholder="Descripción" value={formData.descripcion} onChange={handleInputChange} />
         </Form.Field>
-        <Form.Field>
-          <label>Categoría</label>
-          <input name="categoria" placeholder="Categoría" value={formData.categoria} onChange={handleInputChange} />
+        <Form.Field className="form-field">
+          <label className="form-label">Categoría</label>
+          <input className="form-input" name="categoria" placeholder="Categoría" value={formData.categoria} onChange={handleInputChange} />
         </Form.Field>
-        <Form.Field>
-          <label>Fecha de Inicio</label>
-          <input name="fecha_inicio" type="date" value={formData.fecha_inicio} onChange={handleInputChange} />
+        <Form.Field className="form-field">
+          <label className="form-label">Fecha de Inicio</label>
+          <input className="form-input" name="fecha_inicio" type="date" value={formData.fecha_inicio} onChange={handleInputChange} />
         </Form.Field>
-        <Form.Field>
-          <label>Fecha de Terminación</label>
-          <input name="fecha_terminacion" type="date" value={formData.fecha_terminacion} onChange={handleInputChange} />
+        <Form.Field className="form-field">
+          <label className="form-label">Fecha de Terminación</label>
+          <input className="form-input" name="fecha_terminacion" type="date" value={formData.fecha_terminacion} onChange={handleInputChange} />
         </Form.Field>
-        <Form.Field>
-          <label>Formula</label>
-          <input name="formula" placeholder="Formula" value={formData.formula} onChange={handleInputChange} />
+        <Form.Field className="form-field">
+          <label className="form-label">Formula</label>
+          <input className="form-input" name="formula" placeholder="Formula" value={formData.formula} onChange={handleInputChange} />
         </Form.Field>
-        <Form.Field>
-          <label>Frecuencia</label>
-          <input name="frecuencia" placeholder="Frecuencia" value={formData.frecuencia} onChange={handleInputChange} />
+        <Form.Field className="form-field">
+          <label className="form-label">Frecuencia</label>
+          <input className="form-input" name="frecuencia" placeholder="Frecuencia" value={formData.frecuencia} onChange={handleInputChange} />
         </Form.Field>
-        <Form.Field>
-          <label>Cumplimiento</label>
-          <input name="cumplimiento" type="number" placeholder="Cumplimiento" value={formData.cumplimiento} onChange={handleInputChange} />
+        <Form.Field className="form-field">
+          <label className="form-label">Cumplimiento</label>
+          <input className="form-input" name="cumplimiento" type="number" placeholder="Cumplimiento" value={formData.cumplimiento} onChange={handleInputChange} />
         </Form.Field>
-        <Form.Field>
-          <label>Área</label>
-          <input name="area" placeholder="Área" value={formData.area} onChange={handleInputChange} />
+        <Form.Field className="form-field">
+          <label className="form-label">Área</label>
+          <input className="form-input" name="area" placeholder="Área" value={formData.area} onChange={handleInputChange} />
         </Form.Field>
-        <Button type="submit" onClick={postData}>Crear</Button>
+        <Button className="form-button" type="submit" onClick={postData}>Crear</Button>
       </Form>
-      {error && <p>{error}</p>}
+      {error && <p className="error-message">{error}</p>}
     </div>
   );
 }
