@@ -26,3 +26,5 @@ const AyudaSchema = new mongoose.Schema({
 const Ayuda = mongoose.model('ayuda', AyudaSchema, 'ayuda');
 
 module.exports = Ayuda;
+
+//modelo

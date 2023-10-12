@@ -46,3 +46,6 @@ const indicadorSchema = new mongoose.Schema({
 const Indicadores = mongoose.model('indicadores', indicadorSchema, 'indicadores');
 
 module.exports = Indicadores;
+
+//modelo
+

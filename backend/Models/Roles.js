@@ -15,3 +15,6 @@ const rolSchema = new mongoose.Schema({
 const Roles = mongoose.model('roles', rolSchema, 'roles');
 
 module.exports = Roles;
+
+//modelo
+

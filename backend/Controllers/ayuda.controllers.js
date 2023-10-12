@@ -56,3 +56,5 @@ const obtenerAyuda = async (req, res) => {
 }
 
 module.exports = { obtenerAyuda, deleteAyuda, postAyuda, putAyuda };
+
+//controller

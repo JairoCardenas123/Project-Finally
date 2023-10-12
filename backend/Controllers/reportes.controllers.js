@@ -109,3 +109,6 @@ const deleteReporte = async (req, res) => {
 };
 
 module.exports = { postReporte, obtenerReportes, putReporte, deleteReporte };
+
+
+//controller

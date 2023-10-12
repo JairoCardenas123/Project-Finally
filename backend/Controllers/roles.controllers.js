@@ -70,3 +70,7 @@ const obtenerRoles = async (req, res) => {
 };
 
 module.exports = { obtenerRoles, postRol, deleteRol, putRol };
+
+
+//controller
+

@@ -83,3 +83,8 @@ const obtenerIndicadores = async (req, res) => {
 };
 
 module.exports = { obtenerIndicadores, deleteIndicador, postIndicador, putIndicador };
+
+
+
+//controller
+

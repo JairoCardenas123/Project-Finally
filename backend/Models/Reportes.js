@@ -41,3 +41,6 @@ const reporteSchema = new mongoose.Schema({
 const Reportes = mongoose.model('reportes', reporteSchema, 'reportes');
 
 module.exports = Reportes;
+
+//modelo
+

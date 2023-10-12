@@ -61,3 +61,8 @@ const obtenerUsuarios = async (req, res) => {
 }
 
 module.exports = { obtenerUsuarios, postUsuario, deleteUsuario, putUsuario };
+
+
+
+//controller
+
